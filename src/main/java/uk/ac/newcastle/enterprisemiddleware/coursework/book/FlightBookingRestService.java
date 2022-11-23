@@ -23,7 +23,7 @@ import java.util.logging.Logger;
  * @description 飞机预订接口类
  */
 
-@Path("/api/flightBooking")
+@Path("flightBooking")
 @Consumes(MediaType.APPLICATION_JSON)
 @Produces(MediaType.APPLICATION_JSON)
 public class FlightBookingRestService {
@@ -78,7 +78,6 @@ public class FlightBookingRestService {
     }
 
     @POST
-    @Path("/createFlightBooking")
     @Operation(
             summary = "post a new flight booking",
             description = "posts a new flight booking object to the database.")
